@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  histoteria-api:
+    image: ${DOCKER_REGISTRY-}histoteriaapi
+    build:
+      context: .
+      dockerfile: histoteria-api/Dockerfile
